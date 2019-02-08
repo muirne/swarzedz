@@ -1,0 +1,50 @@
+$green:#a6cf39;
+$lightgrey:#e6e7e9;
+$grey:#736e75;
+$darkgrey:#808080;
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$font:'Lato', sans-serif;
+
+
+body{
+    font-family:'Lato', sans-serif ;
+}
+
+.one{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: $lightgrey;
+    max-width: 1200px;
+}
+
+.three{
+    max-width: 1200px;
+}
+
+.five{
+    max-width: 1200px;
+}
+
+.adress{
+    &__table{
+        list-style-type: none;
+    }
+}
+
+.carousel{
+    &-item{
+
+    }
+    &__text{
+
+  }
+
+  &__text--shower {
+    font-family:'Lato', sans-serif ;
+    background-color: blue;
+
+  }
+}
