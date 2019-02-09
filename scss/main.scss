@@ -1,50 +1,230 @@
-$green:#a6cf39;
-$lightgrey:#e6e7e9;
-$grey:#736e75;
-$darkgrey:#808080;
-
+$green: #a6cf39;
+$lightgrey: #e6e7e9;
+$grey: #736e75;
+$darkgrey: #808080;
 @import url('https://fonts.googleapis.com/css?family=Lato');
+$font: 'Lato', sans-serif;
 
-$font:'Lato', sans-serif;
-
-
-body{
-    font-family:'Lato', sans-serif ;
+body {
+    font-family: $font;
 }
 
-.one{
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+//container-one
+
+.one {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     background-color: $lightgrey;
-    max-width: 1200px;
 }
 
-.three{
-    max-width: 1200px;
-}
+.adress {
+    margin-top: 0.6em;
 
-.five{
-    max-width: 1200px;
-}
-
-.adress{
-    &__table{
+    &__table {
         list-style-type: none;
+        font-size: 0.8em;
+        text-align: right;
+        color: $darkgrey;
+        border-right: 1.3px solid $darkgrey;
+        padding: 2px;
+    }
+
+    &__table li {
+        padding: 2px;
     }
 }
 
-.carousel{
-    &-item{
+.brand {
+    display: flex;
+    align-items: center;
 
+    &__logo {
+        display: flex;
+        align-items: center;
     }
-    &__text{
+}
+//container-two
+.menu {
+    background: $green;
+    color: white;
+    max-height: 74px;
+}
 
-  }
+.navbar {
+    min-height: 74px;
+    margin: 0;
+    padding: 0;
 
-  &__text--shower {
-    font-family:'Lato', sans-serif ;
-    background-color: blue;
+    &-collapse {
+        min-height: 74px;
+        margin: 0;
+        padding: 0;
+    }
+}
 
-  }
+.nav li a {
+    min-height: 74px;
+    color: white;
+    padding: 0.5em;
+    font-size: 1em;
+    display: flex;
+    align-items: center !important;
+}
+
+.nav li a:hover {
+    background: $darkgrey;
+    text-decoration: none;
+    color: white;
+    min-height: 74px;
+}
+
+#top-menu {
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 18em;
+}
+
+.search {
+    background-color: $darkgrey;
+    max-height: 74px;
+
+    &__form {
+        display: flex;
+        text-align: center;
+        align-items: center !important;
+        min-height: 74px;
+    }
+
+    &__form--place {
+        background-color: $darkgrey;
+        border: none;
+        padding: 0;
+        margin: 0;
+        color: white;
+        padding: 0.5em;
+        font-size: 1em;
+        display: flex;
+        align-items: center !important;
+        max-width: 65%;
+    }
+}
+
+input::placeholder {
+    color: white;
+    font-style: italic;
+    font-size: 1em;
+}
+//container-three
+.three {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.subthree {
+    position: relative;
+}
+
+.carousel {
+    border-bottom: 5px solid $darkgrey;
+    width: 100%;
+
+    &-item {
+        width: 100%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.carouseltext {
+    min-height: 145px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+
+    &__shower {
+        background-color: $green;
+        border-bottom: 5px solid $darkgrey;
+        color: white;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__shower--text {
+        width: 30%;
+    }
+}
+//container-four
+.main {
+    position: relative;
+}
+
+.four {
+    margin-top: 5px;
+    position: relative;
+}
+
+.offer {
+    display: flex;
+    min-height: 90px;
+    font-size: 1.2rem;
+
+    &__colone {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+        background-color: $darkgrey;
+        min-height: 90px;
+    }
+
+    &__coltwo {
+        min-height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: $green;
+    }
+}
+
+.ghost {
+    position: absolute;
+    bottom: 0;
+    min-height: 90px;
+    &__grey{
+        background-color: $darkgrey;
+        min-height: 90px;
+        z-index: -1;
+    }
+}
+//container-five
+.card{
+    &-title{
+        color:$green;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        padding: 8px;
+        margin: 5px;
+    }
+    &-text{
+        color: $darkgrey;
+    }
 }
