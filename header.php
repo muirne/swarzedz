@@ -15,8 +15,8 @@
             <div class="row">
                 <div class="col-md-6 brand">
                     <a class="brand__logo" href="#">
-            <img class="brand__logo--pic"src="http://localhost/swarzedz/wp-content/uploads/Slice_1-300x74.png" alt="">
-        </a>
+                     <img class="brand__log--pic"src="http://localhost/swarzedz/wp-content/uploads/Slice_1-300x74.png" alt="">
+                   </a>
                 </div>
                 <div class="col-md-6 adress">
                     <ul class="adress__table">
@@ -36,9 +36,9 @@
             <div class="col-md-8 menu">
                 <nav class="navbar navbar-expand-lg navbar-light bg-faded">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentLG" aria-controls="navbarSupportedContentLG" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-               </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContentLG">
+                     <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-toggleable-md" id="navbarSupportedContentLG">
                         <a class="responsive"><span></span></a>
                         <?php wp_nav_menu(
                              array(
@@ -51,14 +51,17 @@
                               )
                           ); ?>
                     </div>
+                    <a class="circle" href="#search">
+                    <img src="http://localhost/swarzedz/wp-content/uploads/search-2.png" alt="">
+                   </a>
                 </nav>
             </div>
             <div class="col-md-4 search">
                 <form class="search__form">
                     <input class="search__form--place" type="search" placeholder="Wyszukaj na stronie.." aria-label="Search" autocomplete="off">
                     <a href="#search">
-                 <img src="http://localhost/swarzedz/wp-content/uploads/search-1.png" alt="">
-               </a>
+                     <img src="http://localhost/swarzedz/wp-content/uploads/search-1.png" alt="">
+                    </a>
                 </form>
             </div>
         </div>
@@ -79,9 +82,9 @@
 
     <div class="container-fluid subthree">
         <div class="row carouseltext">
-            <div class="col-md-6">
+            <div class="col-lg-6">
             </div>
-            <div class="col-md-6 carouseltext__shower">
+            <div class="col-lg-6 carouseltext__shower">
                 <p class="carouseltext__shower--text">Kabiny prysznicowe firmy Radaway</p>
             </div>
         </div>

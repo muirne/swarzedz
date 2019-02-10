@@ -52,6 +52,7 @@ body {
     }
 }
 //container-two
+
 .menu {
     background: $green;
     color: white;
@@ -126,10 +127,11 @@ input::placeholder {
     font-size: 1em;
 }
 //container-three
+
 .three {
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 1em;
 }
 
 .subthree {
@@ -161,7 +163,7 @@ input::placeholder {
         background-color: $green;
         border-bottom: 5px solid $darkgrey;
         color: white;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -172,13 +174,15 @@ input::placeholder {
     }
 }
 //container-four
+
 .main {
     position: relative;
 }
 
 .four {
-    margin-top: 5px;
+    margin-top: 1.5em;
     position: relative;
+    margin-bottom: 1em;
 }
 
 .offer {
@@ -209,22 +213,145 @@ input::placeholder {
     position: absolute;
     bottom: 0;
     min-height: 90px;
-    &__grey{
+
+    &__grey {
         background-color: $darkgrey;
         min-height: 90px;
         z-index: -1;
     }
 }
 //container-five
-.card{
-    &-title{
-        color:$green;
+
+.card {
+    &-title {
+        color: $green;
         text-transform: uppercase;
         font-size: 1.3em;
         padding: 8px;
         margin: 5px;
     }
-    &-text{
+
+    &-text {
         color: $darkgrey;
+    }
+}
+//footer
+
+.foot {
+    background-color: $lightgrey;
+    color: black;
+    font-size: 0.6em;
+    padding: 5px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    &__one {
+        p {
+            margin: 0;
+        }
+    }
+
+    &__two {
+        text-align: right;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+//Extra large. Above 75em (1200px)
+@media screen and (max-width: 75em) {
+    #top-menu {
+        margin-left: 0;
+    }
+}
+//Medium devices (tablets, less than 992px)
+@media (max-width: 62em) {
+    .navbar-collapse {
+        z-index: 9999999;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+        background-color: $grey;
+    }
+
+    #top-menu {
+        text-align: left;
+        justify-content: left;
+        margin: 0;
+    }
+
+    .carouseltext {
+        position: static;
+        max-height: 80px;
+        font-size: 1em;
+
+        &__shower--text {
+            font-size: 0.8em;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .ghost {
+        display: none;
+    }
+
+    .offer {
+        min-height: 60px;
+        font-size: 0.8rem;
+
+        &__colone {
+            justify-content: center;
+            min-height: 60px;
+        }
+
+        &__coltwo {
+            min-height: 60px;
+        }
+    }
+}
+//Small devices (landscape phones, less than 768px)
+@media (max-width: 48em) {
+    .search {
+        display: none;
+    }
+
+    .adress__table {
+        text-align: left;
+        border: none;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    .carouseltext__shower--text {
+        font-size: 0.6em;
+        width: 100%;
+    }
+
+    .foot__two {
+        text-align: left;
+    }
+
+    .circle {
+        display: flex;
+        color: $grey;
+    }
+}
+//Medium. Above 48em (768px)
+@media (min-width: 48em) {
+    .circle {
+        display: none;
+    }
+}
+//Extra small devices (portrait phones, less than 576px)
+@media (max-width: 34em) {
+    #top-menu {
+        display: flex;
+        flex-direction: column;
     }
 }
